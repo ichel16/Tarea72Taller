@@ -44,10 +44,8 @@ public class Taller {
         for (Empleado e : listaPersonal) {
             
             if (e.getNif().equals(nif)) {
-                System.err.println("Esa persona ya está de alta");
                 existe=true;
             }
-            
         }
         
         return existe;        
@@ -142,6 +140,8 @@ public class Taller {
                 
             }  
             
+        }else{
+            System.err.println("Esa persona ya está de alta");
         }
         
         
@@ -205,7 +205,7 @@ public class Taller {
                     System.out.println("Introduce las ventas realizadas.");
                     float ventasRealizadas = Tarea72Taller.validarFloat(teclado.next());
                     
-                    ((Vendedor)listaPersonal.get(0)).agregaVenta(ventasRealizadas);
+                    ((Vendedor)d).agregaVenta(ventasRealizadas);
                     
                 } catch (Exception e) {
                     System.err.println("Este empleado no puede realizar ventas.");
@@ -245,7 +245,7 @@ public class Taller {
                     System.out.println("Introduce las horas que quieres añadir.");
                     int horas = Tarea72Taller.validarInt(teclado.next());
                     
-                    ((Mecanico)listaPersonal.get(0)).agregarHoras(horas);
+                    ((Mecanico)d).agregarHoras(horas);
                     
                 } catch (Exception e) {
                     System.err.println("Este empleado no puede realizar horas.");

@@ -53,7 +53,7 @@ public class Tarea72LeerYEscribir {
                 }
                 
             }
-            
+            System.out.println("Datos guardados.");
         } catch (Exception e) {
             System.err.println("Error al guardar el archivo.");
         }

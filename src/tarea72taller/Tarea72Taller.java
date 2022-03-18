@@ -37,7 +37,7 @@ public class Tarea72Taller {
         taller.ordenarEmpleado();
         */
         //Cargamos los datos almacenados en el fihcero datos.dat
-        //taller.cargarDatos();
+        taller.cargarDatos();
         
         System.out.println("Bienvenido a la Aplicacion del Taller, elige una opción");
         
